@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "ie >= 9"]
+      }
+    }],
+    "stage-0",
+    "react",
+    "react-boilerplate"
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": true }],
+    "react-hot-loader/babel"
+  ]
+}

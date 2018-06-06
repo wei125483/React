@@ -1,0 +1,220 @@
+:global {
+    .table_home_list {
+		padding: 0 10px 10px 10px;
+		min-height: 809px;
+		height: e("calc(100vh - 190px)");
+        td,
+        th {
+            text-align: left !important;
+		}
+		.ant-table-header{
+			background: #fff!important;
+		}
+		th {
+			color: rgba(72, 72, 72, 0.8)!important;
+			font-weight: bold!important;
+			background: #fff!important;
+		}
+    }
+    .home_pie_box {
+        .ant-tabs-bar {
+            margin-bottom: 0!important;
+        }
+    }
+}
+
+.map_box {
+    position: relative;
+    //height: e("calc(100vh - 433px)");
+    min-height: 564px;
+    overflow: hidden;
+}
+
+.echarts_box {
+    position: relative;
+    //height: e("calc(100vh - 477px)");
+    min-height: 520px;
+}
+
+.items_left, .items_right {
+    display: inline-block;
+    height: auto;
+    width: 33.333333%;
+    & p{
+        font-size: 14px;
+        font-weight: 700;
+        color: #262626;
+    }
+}
+
+.items_left, .items_right {
+    position: absolute;
+    top: 0;
+    padding: 10px 20px;
+}
+
+.items_left {
+    left: 0;
+}
+
+.items_right {
+    right: 0;
+}
+
+.items_center {
+    position: relative;
+    height: e("calc(100vh - 477px)");
+    min-height: 520px;
+}
+
+& .items_right {
+    text-align: right;
+    & .items_list {
+        & li {
+            padding-left: 0;
+            padding-right: 22px;
+        }
+        & i {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+.items_list {
+    padding: 5px 0 0 0;
+    list-style: none;
+    color: #262626;
+    & li {
+        position: relative;
+        margin-bottom: 5px;
+        padding-left: 22px;
+        list-style: none;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    & i {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+    }
+    & b {
+        margin-left: 10px;
+        margin-right: 4px;
+    }
+    & span {
+        font-size: 12px;
+        color: #aaabaa;
+    }
+}
+
+@media (max-width: 1366px) {
+    .items_center {
+        display: block;
+        width: 100%;
+    }
+    .items_left {
+        float: left;
+    }
+    .items_left, .items_right {
+        position: static;
+        height: auto;
+        width: 50%;
+    }
+}
+
+.home {
+    & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        transform: translate(-50%, -50%);
+    }
+    & .title {
+        color: #aaabaa;
+        line-height: 22px;
+        height: 22px;
+    }
+    & .num {
+        font-size: 36px;
+        color: #262626;
+        span {
+            font-size: 12px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            background-color: #d0d0d0;
+            color: #fff;
+            border-radius: 100%;
+        }
+    }
+    @media (max-width: 1200px) {
+        & .num {
+            font-size: 24px;
+        }
+        & .fs68 {
+            font-size: 38px;
+        }
+        & .ranking {
+            margin-top: 24px;
+        }
+        & .pie_box {
+            margin-bottom: 24px;
+        }
+    }
+    & .fs68 {
+        font-size: 68px;
+        color: #ffa210;
+        display: block;
+    }
+    & .general {
+        .items {
+            background: #fff;
+            height: 180px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    & .titleDiv {
+        box-sizing: border-box;
+        padding: 11px 16px;
+        color: #5e5e5e;
+        border-bottom: 1px solid #d9d9d9
+    }
+    & .row {
+        margin: 0 -12px;
+        & .item {
+            padding: 0 12px;
+            >div {
+                background: #fff;
+            }
+        }
+    }
+    & .tablefooter {
+        background-color: #ffffff;
+        margin-bottom: 24px;
+        .tableBox {
+            padding: 20px;
+        }
+        .more {
+            padding: 0px 10px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 48px;
+            & a {
+                color: #999;
+            }
+            & a:hover {
+                color: #1890ff;
+            }
+        }
+    }
+}
